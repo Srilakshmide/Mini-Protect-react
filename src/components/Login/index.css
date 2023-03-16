@@ -1,0 +1,184 @@
+.bg-container {
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .bg-container {
+    display: none;
+  }
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100vh;
+}
+
+.main-container {
+  width: 456px;
+  height: 523px;
+  background: #fefeff;
+  box-shadow: 0px 8px 40px rgba(7, 7, 7, 0.08);
+  border-radius: 8px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  align-self: center;
+}
+
+.login-head {
+  text-align: center;
+  font-family: 'DM Sans';
+  font-size: 24px;
+  color: #f7932e;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 32px;
+  margin-top: 0px;
+}
+
+.login {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  color: #0f172a;
+  padding-top: 0px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.label {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: #475569;
+}
+
+.input {
+  height: 40px;
+  width: 100%;
+  padding: 10px;
+  background: #e2e8f0;
+  border-radius: 2px;
+  font-family: 'DM Sans';
+  font-size: 16px;
+  margin-top: 6px;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+}
+
+.submit-btn {
+  background: #f7931e;
+  height: 40px;
+  width: 100%;
+  font-family: 'DM Sans';
+  font-size: 16px;
+  color: #ffffff;
+  border-radius: 8px;
+  align-self: center;
+  margin-top: 30px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.login-img {
+  width: 50%;
+  height: 100vh;
+  order: 2;
+}
+
+.mobile-container {
+  height: 100vh;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-container {
+    display: none;
+  }
+}
+
+.img-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-mob {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  color: #0f172a;
+  padding-top: 0px;
+  margin-bottom: 40px;
+  padding-left: 30px;
+  align-self: flex-end;
+}
+
+.login-img-mobile {
+  width: 80%;
+  margin: 0px;
+}
+
+.submit-btn-mob {
+  background: #f7931e;
+  height: 40px;
+  width: 100%;
+  font-family: 'DM Sans';
+  font-size: 16px;
+  color: #ffffff;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.error {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ef4444;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.input-mob {
+  height: 40px;
+  width: 100%;
+  padding: 10px;
+  background: #e2e8f0;
+  border-radius: 2px;
+  font-family: 'DM Sans';
+  font-size: 16px;
+  margin-top: 6px;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+}
