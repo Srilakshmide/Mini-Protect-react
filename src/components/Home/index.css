@@ -1,18 +1,19 @@
 .HomeContainer {
-  padding-top: 76px;
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
 }
 
-.HomeContainer .MainContainer {
+.MainContainer {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
   align-items: center;
 }
-.HomeContainer .SliderContainer {
+
+.SliderContainer {
   margin-top: 6px;
   padding: 0px;
   margin-bottom: 16px;
@@ -21,9 +22,10 @@
   width: 100%;
 }
 
-.HomeContainer .SliderContainer .CarouselImage {
+.CarouselImage {
   height: 150px;
 }
+
 .Loader {
   display: flex;
   justify-content: center;
@@ -31,23 +33,24 @@
   text-align: center;
 }
 
-.HomeContainer .MainContainer .popularRestaurantsContainer {
+.popularRestaurantsContainer {
   width: 100%;
   margin-left: 6px;
   margin-right: 6px;
-  display: flex;
-  flex-direction: column;
-
   padding-left: 16px;
   padding-right: 16px;
+  display: flex;
+  flex-direction: column;
 }
-.HomeContainer .MainContainer .popularRestaurantsContainer .HeadingContainer {
+
+.HeadingContainer {
   display: flex;
   flex-direction: column;
   width: auto;
 }
-.HeadingContainer .MainHeading {
-  font-family: DM Sans;
+
+.MainHeading {
+  font-family: 'DM Sans';
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -56,20 +59,15 @@
   color: #183b56;
 }
 
-.HeadingContainer .MainParagraph {
+.MainParagraph {
   font-family: DM Sans;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
-
-  /* or 200% */
-
-  /* Light / blue-gray / 500 */
-
   color: #64748b;
 }
 
-.popularRestaurantsContainer .FilterContainer {
+.FilterContainer {
   display: flex;
   width: 180px;
   flex-direction: row;
@@ -78,7 +76,7 @@
   height: fit-content;
 }
 
-.popularRestaurantsContainer .FilterContainer .FilterLogo {
+.FilterLogo {
   height: 45px;
   width: 35px;
   left: 0px;
@@ -87,11 +85,11 @@
   color: #475569;
 }
 
-.popularRestaurantsContainer .FilterContainer .SortLabel {
+.SortLabel {
   margin-left: 6px;
-  border-radius: nullpx;
   font-family: DM Sans;
   font-size: 16px;
+  margin-right: 0px;
   font-style: normal;
   font-weight: 500;
   letter-spacing: 0px;
@@ -99,7 +97,7 @@
   color: #475569;
 }
 
-.popularRestaurantsContainer .FilterContainer .SelectElement {
+.SelectElement {
   color: #475569;
   min-width: 80px;
   font-size: 15px;
@@ -108,21 +106,22 @@
   border: none;
   background-color: transparent;
 }
+
 hr {
   display: none;
 }
 
-.popularRestaurantsContainer .SearchInputContainer {
+/* .popularRestaurantsContainer {
   display: flex;
   flex-direction: column;
   padding: 3px;
   justify-content: space-between;
   width: 300px;
-}
+} */
 
-.SearchInputContainer .SearchLabel {
-  font-family: DM Sans;
-  font-size: 16px;
+.SearchLabel {
+  font-family: 'DM Sans';
+  font-size: 15px;
   font-style: normal;
   font-weight: 500;
   letter-spacing: 0px;
@@ -130,19 +129,29 @@ hr {
   color: #475569;
 }
 
-.SearchInputContainer .SearchElement {
+.searchIconContainer {
   height: 30px;
   background-color: #e3ececec;
-  border: 1px solid;
+  border: 1px solid #646a72;
   margin-top: 7px;
   border-radius: 6px;
-  color: #ada0df;
+  outline: none;
+  width: 50%;
+  display: flex;
 }
 
-.MainContainer .RestaurantList {
+.SearchElement {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 3px;
+  width: 40%;
+}
+
+.RestaurantList {
   list-style-type: none;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -151,7 +160,8 @@ hr {
   height: 100px;
   padding-left: 26px;
 }
-.NoResContainer .NoResPara {
+
+.NoResPara {
   font-family: DM Sans;
   font-size: 16px;
   color: #475569;
@@ -165,20 +175,23 @@ hr {
     display: flex;
     align-items: center;
   }
-  .HomeContainer .SliderContainer {
-    margin-top: 16px;
+
+  .SliderContainer {
     padding-left: 40px;
     padding-right: 40px;
   }
-  .HomeContainer .MainContainer {
+
+  .MainContainer {
     height: 100%;
     width: 95%;
     align-items: center;
   }
-  .HomeContainer .SliderContainer .CarouselImage {
+
+  .CarouselImage {
     height: auto;
   }
-  .HomeContainer .MainContainer .popularRestaurantsContainer {
+
+  .popularRestaurantsContainer {
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
@@ -187,32 +200,38 @@ hr {
     margin-right: 0px;
     align-self: flex-start;
   }
-  .HomeContainer .MainContainer .popularRestaurantsContainer .HeadingContainer {
+
+  .HeadingContainer {
     display: flex;
     flex-direction: column;
-    margin-top: 26px;
+    margin-top: 20px;
+    margin-left: 30px;
     justify-content: center;
     height: fit-content;
   }
 
-  .popularRestaurantsContainer .FilterContainer {
+  .FilterContainer {
     width: 250px;
-    margin-bottom: 8px;
   }
-  .popularRestaurantsContainer .FilterContainer .FilterLogo {
+
+  .FilterLogo {
     width: 40px;
     height: 40px;
   }
-  .popularRestaurantsContainer .FilterContainer .SortLabel {
+
+  .SortLabel {
     font-size: 17px;
   }
-  .popularRestaurantsContainer .FilterContainer .SelectElement {
+
+  .SelectElement {
     color: #475569;
     font-size: 17px;
     font-weight: 600;
+    padding: 0px;
     font-family: DM Sans;
     border: none;
   }
+
   hr {
     display: block;
     width: 100%;
@@ -220,7 +239,7 @@ hr {
     color: #183b56;
   }
 
-  .popularRestaurantsContainer .SearchInputContainer {
+  .SearchInputContainer {
     display: flex;
     flex-direction: column;
     padding: 6px;
@@ -228,20 +247,23 @@ hr {
     width: 300px;
     margin-bottom: 8px;
   }
-  .NoResContainer .NoResPara {
+
+  .NoResPara {
     font-family: DM Sans;
     font-size: 35px;
     color: #475569;
     font-weight: 600;
   }
+
   .NoResContainer {
     width: 100%;
     height: 200px;
     padding-left: 10px;
   }
 }
+
 @media screen and (min-width: 660px) {
-  .popularRestaurantsContainer .SearchInputContainer {
+  .SearchInputContainer {
     display: flex;
     flex-direction: column;
     padding: 3px;
@@ -249,16 +271,8 @@ hr {
     align-items: flex-start;
     width: 400px;
   }
-  .SearchInputContainer .SearchElement {
-    height: 30px;
-    background-color: #e3ececec;
-    border: 1px solid;
-    margin-top: 7px;
-    border-radius: 6px;
-    color: #ada0df;
-    width: 200px;
-  }
-  .NoResContainer .NoResPara {
+
+  .NoResPara {
     font-family: DM Sans;
     font-size: 19px;
     color: #475569;
@@ -267,7 +281,7 @@ hr {
 }
 
 @media screen and (min-width: 900px) {
-  .HeadingContainer .MainHeading {
+  .MainHeading {
     font-family: DM Sans;
     font-size: 32px;
     font-style: normal;
@@ -278,7 +292,8 @@ hr {
     margin-bottom: 3px;
     text-align: left;
   }
-  .HeadingContainer .MainParagraph {
+
+  .MainParagraph {
     font-family: DM Sans;
     font-size: 16px;
     font-style: normal;
@@ -288,7 +303,8 @@ hr {
     height: 35px;
     height: fit-content;
   }
-  .MainContainer .RestaurantList {
+
+  .RestaurantList {
     list-style-type: none;
     flex-direction: row;
     align-items: center;
@@ -296,15 +312,18 @@ hr {
     flex-wrap: wrap;
   }
 }
+
 @media screen and (min-width: 1000px) {
-  .popularRestaurantsContainer .SearchInputContainer {
+  .SearchInputContainer {
     width: 470px;
+    margin-bottom: 10px;
     justify-content: center;
     align-items: center;
   }
-  .SearchInputContainer .SearchLabel {
-    font-family: DM Sans;
-    font-size: 18px;
+
+  .SearchLabel {
+    font-family: 'DM Sans';
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
     text-align: left;
@@ -312,17 +331,8 @@ hr {
     margin-top: 4px;
     text-align: left;
   }
-  .SearchInputContainer .SearchElement {
-    height: 30px;
-    padding: 1px;
-    background-color: #e3ececec;
-    border: 1px solid;
-    margin-top: 7px;
-    border-radius: 6px;
-    color: #ada0df;
-    width: 250px;
-  }
-  .HeadingContainer .MainParagraph {
+
+  .MainParagraph {
     font-family: DM Sans;
     font-size: 18px;
     font-style: normal;
@@ -332,7 +342,8 @@ hr {
     height: 35px;
     height: fit-content;
   }
-  .MainContainer .RestaurantList {
+
+  .RestaurantList {
     list-style-type: none;
     flex-direction: row;
     align-items: center;
@@ -340,11 +351,13 @@ hr {
     flex-wrap: wrap;
   }
 }
+
 @media screen and (min-width: 1200px) {
-  .popularRestaurantsContainer .SearchInputContainer {
+  .SearchInputContainer {
     width: 470px;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 10px;
   }
 }

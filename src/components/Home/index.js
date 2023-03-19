@@ -3,6 +3,7 @@ import Cookies from 'js-cookie'
 import Loader from 'react-loader-spinner'
 
 import {BsFilterLeft} from 'react-icons/bs'
+import {AiOutlineSearch} from 'react-icons/ai'
 
 import Slider from 'react-slick'
 
@@ -218,17 +219,20 @@ class Home extends Component {
             <label className="SearchLabel" htmlFor="searchInput">
               Search The Restaurant
             </label>
-            <input
-              type="search"
-              id="searchInput"
-              className="SearchElement"
-              onChange={this.onSearchRestaurant}
-              placeholder="Search Restaurant Here.."
-            />
+            <div className="searchIconContainer">
+              <AiOutlineSearch size={30} color="#ada0df" />
+              <input
+                type="search"
+                id="searchInput"
+                className="SearchElement"
+                onChange={this.onSearchRestaurant}
+                placeholder="Search"
+              />
+            </div>
           </div>
 
           <div className="FilterContainer">
-            <BsFilterLeft className="FilterLogo" />
+            <BsFilterLeft size={35} color="#475569" />
             <p className="SortLabel">Sort By</p>
             <select
               id="sortBy"
@@ -305,8 +309,8 @@ class Home extends Component {
     const {isLoading} = this.state
     return (
       <>
+        <Header />
         <div className="HomeContainer">
-          <Header />
           <div className="MainContainer">
             {this.onRenderDisplayCarousel()}
             {this.popularRestaurantsView()}
