@@ -1,5 +1,4 @@
-.BackgroundContainer {
-  width: 100vw;
+/* .BackgroundContainer {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -21,20 +20,13 @@
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
-  line-height: 32px;
-  /* identical to box height, or 160% */
-
   text-align: center;
-  /* Light / blue-gray / 800 */
   color: #1e293b;
 }
 
 .Para {
   font-family: DM Sans;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
-  line-height: 24px;
   text-align: center;
   color: #475569;
 }
@@ -44,36 +36,15 @@
   flex-direction: column;
   align-items: center;
   padding: 8px 16px;
-
-  position: static;
-
   background: #f7931e;
   border-radius: 8px;
   border: none;
-
-  /* Inside Auto Layout */
-
   flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0px 0px;
-  font-family: Inter;
-  font-style: normal;
+  font-family: DM Sans;
   font-weight: 500;
   font-size: 12px;
-  line-height: 16px;
-  /* identical to box height, or 133% */
-
-  /* Light / base / white */
-
   color: #ffffff;
-
-  /* Inside Auto Layout */
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 0px 8px;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 767px) {
@@ -92,4 +63,55 @@
   .Button {
     font-size: 16px;
   }
+} */
+
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.not-found-image {
+  width: 150px;
+}
+
+@media screen and (min-width: 768px) {
+  .not-found-image {
+    width: 250px;
+  }
+}
+
+.not-found-heading {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  color: #1e293b;
+}
+
+.not-found-text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 32px;
+  text-align: center;
+  color: #475569;
+}
+@media screen and (min-width: 768px) {
+  .not-found-text {
+    font-size: 20px;
+  }
+}
+
+.home-btn {
+  background: #f7931e;
+  border-radius: 8px;
+  padding: 8px 16px;
+  color: #ffffff;
+  border: none;
 }

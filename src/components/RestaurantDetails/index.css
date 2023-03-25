@@ -1,4 +1,4 @@
-.BackgroundContainer {
+/* .BackgroundContainer {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -22,12 +22,7 @@
   font-weight: bold;
   font-size: 20px;
   line-height: 32px;
-  /* identical to box height, or 160% */
-
   text-align: center;
-
-  /* Light / blue-gray / 800 */
-
   color: #1e293b;
 }
 
@@ -54,9 +49,6 @@
   background: #f7931e;
   border-radius: 8px;
   border: none;
-
-  /* Inside Auto Layout */
-
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -66,14 +58,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
-  /* identical to box height, or 133% */
-
-  /* Light / base / white */
-
   color: #ffffff;
-
-  /* Inside Auto Layout */
-
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -96,4 +81,31 @@
   .Button {
     font-size: 16px;
   }
+} */
+
+.food-items-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 1200px;
+  margin-left: 0;
+  margin-top: 35px;
+}
+
+@media screen and (min-width: 768px) {
+  .food-items-list {
+    justify-content: flex-start;
+    margin: auto;
+    margin-top: 35px;
+    padding-left: 0;
+  }
+}
+
+.restaurant-loader {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
